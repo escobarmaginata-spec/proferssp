@@ -1040,3 +1040,66 @@ h6{
   color: #ffffff;
   font-weight: 800;
 }
+
+.botao-pulsando{
+    display:inline-block;
+    background:#60be49;
+    color:#fff;
+    font-weight:bold;
+    font-size:18px;
+    text-align:center;
+    padding:18px 30px;
+    border-radius:10px;
+    text-decoration:none;
+    animation:pulsar 1.5s infinite;
+}
+
+/* efeito pulsar */
+@keyframes pulsar{
+    0%{
+        transform:scale(1);
+        box-shadow:0 0 0 0 rgba(47, 179, 47, 0.7);
+    }
+    70%{
+        transform:scale(1.05);
+        box-shadow:0 0 0 20px rgba(255,176,0,0);
+    }
+    100%{
+        transform:scale(1);
+        box-shadow:0 0 0 0 rgba(255,176,0,0);
+    }
+}
+
+.botao-kit{
+    display:inline-block;
+    background:#22c55e;
+    color:#ffffff;
+    font-weight:bold;
+    font-size:18px;
+    padding:18px 40px;
+    border-radius:40px;
+    text-decoration:none;
+    font-family:Arial, sans-serif;
+    animation:pulsarVerde 1.5s infinite;
+    box-shadow:0 6px 0 #15803d;
+}
+
+.botao-kit:hover{
+    transform:scale(1.05);
+}
+
+/* efeito pulsar */
+@keyframes pulsarVerde{
+    0%{
+        transform:scale(1);
+        box-shadow:0 0 0 0 rgba(34,197,94,0.7);
+    }
+    70%{
+        transform:scale(1.05);
+        box-shadow:0 0 0 15px rgba(34,197,94,0);
+    }
+    100%{
+        transform:scale(1);
+        box-shadow:0 0 0 0 rgba(34,197,94,0);
+    }
+}
