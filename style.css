@@ -1104,19 +1104,6 @@ h6{
     }
 }
 /* protetor */
-img {
-pointer-events: none;
-user-select: none;
-}
 
-body::after{
-content:"SeuDominio.com";
-position:fixed;
-opacity:0.03;
-font-size:80px;
-top:40%;
-left:20%;
-transform:rotate(-30deg);
-pointer-events:none;
-}
+
 
